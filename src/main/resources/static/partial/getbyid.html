@@ -1,0 +1,33 @@
+
+<div> <span><h2>Employee Details</h2></span>
+<div class="form-group" ng-controller = "userController">
+  <label for="title" class="col-sm-2 control-label"> UserId</label>
+  <div class="col-sm-10">
+    <input type="number" ng-model="User.id" class="form-control"  placeholder="UserId Here" required/>
+  </div>
+
+
+
+</br></br>
+<table style="width:100%">
+    <thead>
+        <tr>
+
+            <th>UserId</th>
+            <th>Name</th>
+            <th>Password</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+    <tr><hr></tr>
+        <tr ng-repeat="hero in Users | filter:User.id">
+       		
+            <td>{{hero.id}}</td>
+            <td>{{hero.name}}</td>
+            <td>{{hero.password}}</td>
+          	         </tr>
+    </tbody>
+</table>
+
+</div>

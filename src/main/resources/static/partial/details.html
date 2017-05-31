@@ -1,0 +1,31 @@
+
+<div> <span><h2>User Details</h2></span><span style="float:right"> 
+<button id="add" class="glyphicon glyphicon-folder-open" onClick="location.href='#/create'">
+Create<button id="update" class="glyphicon glyphicon-wrench" onClick="location.href='#/update'">Update
+ </button><button id="Delete" class="glyphicon glyphicon-trash" onClick="location.href='#/delete'">Delete</button>
+ </button><button id="get" class="glyphicon glyphicon-search" onClick="location.href='#/get'">GetbyId</button>
+ </span></div>
+<!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+<table style="width:100%">
+    <thead>
+        <tr>
+
+            <th>UserId</th>
+            <th>Name</th>
+            <th>Password</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+    <tr><hr></tr>
+        <tr ng-repeat="hero in Users">
+       		
+            <td>{{hero.id}}</td>
+            <td>{{hero.name}}</td>
+            <td>{{hero.password}}</td>
+     
+          	 </tr>
+    </tbody>
+</table>
+
+</div>
